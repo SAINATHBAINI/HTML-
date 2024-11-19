@@ -1,0 +1,75 @@
+Tables:
+
+*Table tag is used to define tables in an HTML page.
+*It is used to format & display tabular data.
+*we can define as many rows as we want.
+*In the table tag we have some tags such as :
+   
+1.<caption>
+{The caption for the table was mentioned here.}
+</caption>
+
+2.<thead>
+ {It is used to wrap table head.}
+</thead>
+
+3.<tbody>
+{It is used to wrap table body.}
+</tbody>
+
+4.<tfoot>
+{It is used to wrap table foot.}
+</tfoot>
+
+*tr tag = it is used to display table row.
+*th tag = it is used to display table head.
+*td tag = it is used to display table data.
+
+NOTE: All the above tags are comes under the <table> </table>.
+
+EX:
+<table>
+       <caption>CLASS DETAILS</caption>
+<thead>
+<tr>
+<th>SI.NO</th> 
+<th>NAME</th> 
+<th>COURSE</th> 
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> 613</td>
+<td>sainath</td>
+<td>AIML</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td> 614</td>
+<td>sunny</td>                    
+<td>AIML</td>                                 
+</tr>
+</tfoot>
+</table>
+
+In tables we have 2 attributes:
+1.colspan:If you want to span multiple columns,you can you the colspan attribute.
+<tfoot>
+<tr>
+<td colspan="2"> 614</td>                    
+<td>AIML</td>                                 
+</tr>
+</tfoot>
+</table>
+
+2.rowspan:If you want to span multiple rows,you can you the rowspan attribute.
+<tfoot>
+<tr>
+<td rowspan="2"> 614</td>                   
+<td>AIML</td>                                 
+</tr>
+</tfoot>
+</table>
