@@ -1,0 +1,108 @@
+*HTML Forms: An HTML form is used to collect input from the user.
+EX: Google form, Train ticket form,etc.
+
+Form tag is used in between body tag.
+<form action="post"> <!--action is that whether we are getting information or giving information. For getting information use action="get" & for posting information use action="post"-->
+
+</form>
+
+*In the form tag we have the elements tag to add the data into the form. some of the imp elements tags are given below:
+**NOTE:For every element they consists of their own "TYPE,ID,CLASS_NAME and one more thing,which is different to every element.
+
+1.placeholder:
+ -It is written in the input tag.
+ -Placeholder is just a box like structure, in which we are going to write our names or anything else.
+ -In the placeholder;
+                    type=text
+                    id=(it should be unique for each other elements)
+                    name=(we can give the same names for the different elements)
+                    placeholder= here we need to enter the data whatever we want to see in the box.
+ -<label> it is used to write the data beside the box(placeholder), by using the "id".
+  
+2.Radio Button:
+-It is written in the input tag.
+-Radio Button is just like a circle, in which we are going to choose our options(only one). 
+-In the Radio Button;
+                      type=radio
+                      id=(it should be unique for each other elements. ex:students roll no's)
+                      name=(we can give the same names for the different elements. ex:student branch)
+                      value= here we need to enter the data whatever we want to see beside the radio button.
+-<label> it is used to write the data beside the Radio Button, by using the "id".
+  
+3.checkbox:
+-It is written in the input tag.
+-checkbox is just like a small box, in which we are going to mark the tick. 
+-In the checkbox;
+                      type=checkbox
+                      id=(it should be unique for each other elements. ex:students roll no's)
+                      name=(we can give the same names for the different elements. ex:student branch)
+                      value= here we need to enter the data whatever we want to see beside the checkbox.
+-<label> it is used to write the data beside the checkbox, by using the "id".
+                      
+4.textarea:
+-textarea is just feild, in which we are going to enter the text or message,response etc..
+-In the checkbox;
+                      name=(we can give the same names for the different elements. ex:student branch)
+                      rows= here we need to enter the number of rows we required.
+                      cols= here we need to enter the number of columns we required.
+                      
+5.select:
+-Here in the select block we need to select the options,which are required.
+-we need to give the class name beside the tag itself.
+ EX:<select name="timigs"></select>
+-To choose the options first we need to write the option tag.
+  <option></option>
+-Here in the tag itself we need to give the "value"  
+  *value=here we need to enter the data whatever we want to see inside the selectbox.
+
+EX:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                      <meta charset="UTF-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      <title>Forms -HTML</title>
+</head>
+
+<body>
+                      <h1>Form to apply for HomeTutions </h1>
+                      <form action="post">
+                                            <div>
+                                                                  <label>Enter student name </label>
+                                                                  <input type="text" id="student name"
+                                                                                        name="student name"
+                                                                                        placeholder="Enter student name">
+                                            </div>
+                                            <div>
+                                                                  <input type="radio" id="Boy" name="Gender"
+                                                                                        value="Boy">
+                                                                  <label for Boy>Boy</label>
+                                                                  <input type="radio" id="Girl" name="Gender"
+                                                                                        value="Girl">
+                                                                  <label for Girl>Girl</label>
+                                            </div>
+                                            <div>
+                                                                  <input type="checkbox" id="student" name="student"
+                                                                                        value="yes"  <label
+                                                                                        for="student">student</label>
+                                            </div>
+                                            <div>
+                                                                  <textarea name="comment" rows="5"
+                                                                                        cols="50">enter your comment here </textarea>
+                                            </div>
+                                            <div>
+                                                                  <select name=timings>
+                                                                                        <option value="mrng">mrng
+                                                                                        </option>
+                                                                                        <option value="afternoon">
+                                                                                                              afternoon
+                                                                                        </option>
+                                                                                        <option value="evening">evening
+                                                                                        </option>
+                                                                  </select>
+                                            </div>
+                      </form>
+</body>
+
+</html>
